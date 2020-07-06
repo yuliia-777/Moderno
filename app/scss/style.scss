@@ -1,17 +1,59 @@
-body{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
+@import 'vars';
+@import 'global';
+@import 'fonts';
 
-.box{
-    font-size: 30px;
-    text-decoration: none;
-}
-.thumb{
-    margin: 0;
+// HEADER
+.header__top-inner{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.header__box{
+    margin-left: auto;
+    margin-right: 30px;
+}
+.box__text
+    span{
+        color: $red;
+    }
+.header__panel{
+    display: flex;
+}
+.header__btn{
+    margin-left: 7px;
+    width: 72px;
+    height: 32px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+}
+.btn__login{
+    background-color: $green;
+}
+.btn__register{
+    background-color: $red;
+}
+.header__bottom{
+    background-color: $bg;
+}
+.header__menu{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.menu__list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 38px;
+            }
+        a{
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
 }

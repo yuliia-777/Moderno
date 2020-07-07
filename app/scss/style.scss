@@ -2,7 +2,9 @@
 @import 'global';
 @import 'fonts';
 
+
 // HEADER
+
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -60,7 +62,9 @@
     }
 }
 
+
 // SEARCH SECTION
+
 .search{
     background-repeat: no-repeat;
     background-position: center;
@@ -114,9 +118,111 @@
         border: none;
         background-color: transparent;
         outline: none;
-        &:hover{
-            cursor: pointer;
-        }
     }
 }
 
+
+// PRODUCTS SECTION
+
+.products{
+    background-color: #f4f6f5;
+}
+.products__panel{
+    text-align: center;
+    padding: 0px 3px 59px;
+    button{
+        font-weight: 500;
+        font-size: 14px;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        padding: 13px 21px;
+        color: $bg;
+    }
+}
+.products__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products__item{
+    max-width: 442px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 32px;
+    &:hover{
+        box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+    }
+}
+.item-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    width: inherit;
+}
+.products-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e7ecf2;
+}
+.box-info{
+    padding: 21px 13px 14px 32px;
+    a{
+        display: block;
+        font-weight: 500;
+    }
+}
+.products-name{
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: $bg;
+}
+.products-category{
+    font-size: 14px;
+    color: $green;
+}
+.products-price{
+    font-size: 20px;
+    font-weight: 700;
+    color: $bg;
+    margin-right: 31px;
+}
+.products-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-info{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.author-avatar{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 17px 13px 17px 32px;
+}
+.author-stars{
+    margin-right: 33px;
+    font-size: 12px;
+}
+.products__bottom-btn{
+    text-align: center;
+    button{
+        margin: 48px 6px 112px;
+        color: $bg;
+        font-size: 16px;
+        padding: 21px 32px 19px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    }
+}

@@ -12,6 +12,11 @@
 </head>
 
 <body>
+
+
+    <!-- HEADER -->
+
+
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -44,7 +49,7 @@
         </div>
         <div class="header__bottom">
             <div class="container">
-                <div class="header__menu">
+                <nav class="header__menu">
                     <ul class="menu__list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -57,9 +62,14 @@
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
     </header>
+
+
+    <!-- SEARCH SECTION -->
+
+
     <section class="search" style="background-image: url(images/search-bg.jpg);">
         <div class="container">
             <div class="search__content">
@@ -81,9 +91,267 @@
         </div>
     </section>
 
+
+    <!-- PRODUCTS SECTION -->
+
+
+    <section class="products">
+        <div class="container-fluid">
+            <div class="products__title title">
+                Let’s Check Out Our Newest Release Prodcuts
+            </div>
+            <div class="products__panel">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".category-wordpress">WordPress</button>
+                <button type="button" data-filter=".category-joomla">Joomla</button>
+                <button type="button" data-filter=".category-plugins">Plugins</button>
+                <button type="button" data-filter=".category-component">Component</button>
+                <button type="button" data-filter=".category-psd">PSD</button>
+            </div>
+            <div class="products__inner">
+                <div class="products__item mix category-component category-new" data-order="1">
+                    <a class=" item-image" href="#" style="background-image: url(images/content/product-1.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Responsive Mobile APP
+                            </a>
+                            <a class="products-category" href="#">
+                                Site Template
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Radiustheme
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-wordpress" data-order="2">
+                    <a class=" item-image" href="#" style="background-image: url(images/content/product-2.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                The Post Grid Pro
+                            </a>
+                            <a class="products-category" href="#">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $15
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                PsdBosS
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-wordpress category-new" data-order="3">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-3.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Food Menu
+                            </a>
+                            <a class="products-category" href="#">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $20
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Manilip
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd" data-order="4">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-4.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Imac Mockup
+                            </a>
+                            <a class="products-category" href="#">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $12
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Lolypop
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-joomla  category-popular" data-order="5">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-5.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Gymedge
+                            </a>
+                            <a class="products-category" href="#">
+                                Joomla Template
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $45
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Micrsof
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-wordpress" data-order="6">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-6.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                The Post Grid Pro
+                            </a>
+                            <a class="products-category" href="#">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Raklouse
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-plugins  category-new  category-popular" data-order="7">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-7.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Doll Face
+                            </a>
+                            <a class="products-category" href="#">
+                                Illsatration
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $10
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                Mikc Art
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd" data-order="8">
+                    <a class="item-image" href="#" style="background-image: url(images/content/product-8.jpg);">
+                    </a>
+                    <div class="products-box">
+                        <div class="box-info">
+                            <a class="products-name" href="#">
+                                Designer Mockup
+                            </a>
+                            <a class="products-category" href="#">
+                                PsdTemplate
+                            </a>
+                        </div>
+                        <div class="products-price">
+                            $10
+                        </div>
+                    </div>
+                    <div class="products-author">
+                        <div class="author-info">
+                            <div class="author-avatar" style="background-image: url(images/content/avatar-bg.jpg);">
+                            </div>
+                            <a class="author-name" href="#">
+                                ThemeLol
+                            </a>
+                        </div>
+                        <div class="author-stars">
+                            (05)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__bottom-btn">
+                <button type="button" data-filter=".category-new">All New Items</button>
+                <button type="button" data-filter=".category-popular">Popular Items</button>
+            </div>
+        </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

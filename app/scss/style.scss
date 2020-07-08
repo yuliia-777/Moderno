@@ -139,7 +139,12 @@
         padding: 13px 21px;
         color: $bg;
     }
+    .mixitup-control-active{
+        background-color: $red;
+        color: #fff;
+    }
 }
+
 .products__inner{
     display: flex;
     justify-content: space-between;
@@ -224,5 +229,50 @@
         outline: none;
         background-color: #fff;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    }
+    .mixitup-control-active{
+        background-color: $red;
+        color: #fff;
+    }
+}
+.author-stars{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    span{
+        color: $bg;
+    }
+    .stars-rate{
+        display: inline-block;
+        margin-right: 3px;
+   } 
+}
+
+
+// PRODUCTS-SLIDER SECTION
+
+.products-slider__inner{
+    margin-top: 15px;
+    margin-bottom: 121px;
+}
+.slick-dots{
+    text-align: center;
+    margin-top: 67px;
+    li{
+        display: inline-block;
+        button{
+            width: 16px;
+            height: 16px;
+            font-size: 0;
+            background-color: #e8e8e8;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            margin: 0px 3px;
+        }
+    }
+    .slick-active
+        button{
+        background-color: $green;
     }
 }

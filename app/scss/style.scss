@@ -318,10 +318,10 @@
         border-radius: 50%;
         margin: 0 auto;
         margin-bottom: 33px;
-        transition: all .5s;
+        transition: all .3s;
         svg{
             margin-top: 20px;
-            transition: all .5s;
+            transition: all .3s;
         }
         .lock-icon{
             margin-top: 15px;
@@ -332,6 +332,43 @@
         font-size: 24px;
         @include f500;
         margin-bottom: 21px;
-        transition: all .5s;
+        transition: all .3s;
+    }
+}
+
+
+// AUTHORS SECTION
+
+.authors{
+    @include bgi;
+    min-height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authors__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    &-text{
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+        max-width: 285px;
+        width: 100%;
+        margin-right: 55px;
+        span{
+           @include f700; 
+        }
+    }
+    &-btn{
+        font-size: 18px;
+        color: $bg;
+        background-color: #fff;
+        padding: 23px 40px 21px;
     }
 }

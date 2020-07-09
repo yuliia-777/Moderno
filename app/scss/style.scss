@@ -372,3 +372,34 @@
         padding: 23px 40px 21px;
     }
 }
+
+
+// TUTORIAL SECTION
+
+.tutorial{
+    margin-top: -40px;
+    margin-bottom: 120px;
+}
+.tutorial__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.tutorial__item{
+    max-width: 370px;
+    width: 100%;
+    &-image{
+        @include bgi;
+        min-height: 270px;
+        max-width: 370px;
+        width: 100%;
+    }
+    &-title{
+        font-size: 24px;
+        line-height: 60px;
+        color: $bg;
+        text-align: center;
+        @include f700;
+        background-color: #f8f8f8;
+        padding: 20px 0;
+    }
+}

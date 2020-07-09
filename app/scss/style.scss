@@ -80,12 +80,12 @@
 .search__title{
     font-size: 48px;
     line-height: 1.5;
-    font-weight: 700;
+    @include f700;
 }
 .search__text{
     font-size: 20px;
     line-height: 30px;
-    font-weight: 500;
+    @include f500;
     margin-bottom: 50px;
 }
 .search__input{
@@ -105,7 +105,7 @@
         color: $text;
         &::placeholder{
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
         }
         &:focus{
             outline: none;
@@ -131,7 +131,7 @@
     text-align: center;
     padding: 0px 3px 59px;
     button{
-        font-weight: 500;
+        @include f500;
         font-size: 14px;
         background-color: #fff;
         outline: none;
@@ -156,6 +156,7 @@
     background-color: #fff;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 32px;
+    transition: all .5s;
     &:hover{
         box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
     }
@@ -177,7 +178,7 @@
     padding: 21px 13px 14px 32px;
     a{
         display: block;
-        font-weight: 500;
+        @include f500;
     }
 }
 .products-name{
@@ -191,7 +192,7 @@
 }
 .products-price{
     font-size: 20px;
-    font-weight: 700;
+    @include f700;
     color: $bg;
     margin-right: 31px;
 }
@@ -274,5 +275,63 @@
     .slick-active
         button{
         background-color: $green;
+    }
+}
+
+
+// ADVANTAGES SECTION
+
+.advantages{
+    background-color: $bg;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+.advantages__title{
+    color: #fff;
+}
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.advantages__item{
+    max-width: 330px;
+    &:hover{
+    .advantages__item-image{
+        background-color: $green;
+        svg{
+            fill: #fff;
+        }
+        .feather.feather-heart{
+            fill: none;
+            stroke: #fff;
+        }
+    }
+    .advantages__item-title{
+        color: $green;
+    }
+    }
+    &-image{
+        background-color: #fff;
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 33px;
+        transition: all .5s;
+        svg{
+            margin-top: 20px;
+            transition: all .5s;
+        }
+        .lock-icon{
+            margin-top: 15px;
+        }
+    }
+    &-title{
+        color: #fff;
+        font-size: 24px;
+        @include f500;
+        margin-bottom: 21px;
+        transition: all .5s;
     }
 }

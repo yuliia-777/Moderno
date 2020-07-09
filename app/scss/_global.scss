@@ -45,7 +45,7 @@ body{
 .title{
     font-size: 36px;
     line-height: 60px;
-    font-weight: 700;
+    @include f700;
     color: $bg;
     text-align: center;
     padding-top: 90px;

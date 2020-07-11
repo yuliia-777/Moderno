@@ -1,5 +1,10 @@
 html{
     box-sizing: border-box;
+    height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
 }
 *,
 *::before,
@@ -21,12 +26,15 @@ li{
 button{
     cursor: pointer;
 }
+
 body{
     font-family: 'Roboto-Regular', sans-serif;
     color: $text;
     font-size: 15px;
     line-height: 24px;
+    height: 100%;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -42,6 +50,19 @@ body{
         padding: 0px 15px;
     }
 }
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content-wrap{
+	flex: 1 0 auto;
+}
+.footer-wrap{
+	flex: 0 0 auto;
+}
+
 .title{
     font-size: 36px;
     line-height: 60px;
@@ -51,3 +72,28 @@ body{
     padding-top: 90px;
     padding-bottom: 45px;
 }
+
+.breadcrumbs__items{
+    padding-top: 46px;
+    padding-bottom: 40px;
+    li{
+        display: inline-block;
+        & + li{
+            padding-left: 20px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '-';
+                left: 5px;
+                color: $green;
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+        span{
+            color: $bg;
+        }
+    }
+}
+

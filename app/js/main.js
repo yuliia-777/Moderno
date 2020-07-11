@@ -2,10 +2,6 @@ $(function () {
 
 
 
-    var mixer = mixitup('.products__inner');
-
-
-
     $(".stars-rate").rateYo({
         rating: 5,
         starWidth: "12px",
@@ -22,6 +18,20 @@ $(function () {
         dots: true
     });
 
+
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        prefix: "$"
+    });
+
+
+
+    var mixer = mixitup('.products__inner');
 
 
 

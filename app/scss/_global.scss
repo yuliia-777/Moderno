@@ -97,3 +97,17 @@ body{
     }
 }
 
+.angle-right{
+    color: #b7c3c8;
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: '\f105';
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: $green;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

@@ -22,14 +22,30 @@
     }
 }
 
-.header__panel{
+.header__box{
+    display: flex;
+    justify-content: space-between;
+     > div{
+        display: inline-block;
+    }
+    .header__panel{
+    display: inline-block;
+    > div{
+        display: inline-block;
+        height: auto;
+    }
+    }
+}
+.header__box .header__btn-panel{
+    height: 90px;
     display: flex;
     align-items: center;
+    div{
+        display: inline-block;
+        margin-top: 40px;
+    }
 }
 .circle-item{
-    &.active{
-        display: block;
-    }
     display: none;
     width: 34px;
     height: 34px;
@@ -122,17 +138,19 @@
             padding: 18px;
             padding-bottom: 13px;
             overflow: auto;
-            z-index: 2;
+            z-index: 4;
         }
     }
 }
 .circle__menu{
     position: absolute;
-    top: 62px;
+    top: 56px;
     right: -7px;
-    border: 1px solid transparent;
+    border: 0 solid #d3d3d3;
     height: 0;
     overflow: hidden;
+    opacity: 0;
+    transition: all .5s;
 }
 .basket__box,
 .notification__box,
@@ -141,12 +159,14 @@
     height: 90px;
     margin-top: 54px;
     margin-left: 15px;
+    transition: top 1s ease-out 0.5s;
     &:hover{
         .circle__menu{
             height: auto;
             overflow: auto;
-            border-color: #e0e0e0;
-            z-index: 2;
+            border-width: 1px;
+            opacity: 1;
+            z-index: 4;
         }
         .circle__menu-link{
             padding: 20px;
@@ -160,6 +180,7 @@
     margin-left: 0;
 }
 .circle__menu-link{
+    display: none;
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     padding: 15px 20px;
@@ -286,20 +307,6 @@
             padding: 4px 13px;
     }
 }
-.btn__login{
-    background-color: $green;
-    margin-left: 21px;
-}
-.btn__register,
-.btn__logout{
-    background-color: $red;
-}
-.btn__login--off{
-    display: none;
-    &.btn__login--on{
-        display: block;
-    }
-}
 .header__bottom{
     background-color: $bg;
 }
@@ -319,6 +326,58 @@
             font-size: 14px;
             line-height: 30px;
         }
+    }
+}
+.header__menu-btn{
+    width: 35px;
+    padding: 25px 0;
+    position: absolute;
+    top: 90px;
+    z-index: 3;
+    cursor: pointer;
+    div{
+        background-color: #fff;
+        height: 3px;
+    & + div{
+        margin-top: 5px;
+    }
+    }
+}
+.header__user-btn{
+    display: none;
+    width: 90px;
+    height: 90px;
+    background-color: $bg;
+    position: absolute;
+    right: 0;
+    &::before{
+        position: absolute;
+        font-size: 36px;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.header__box .header__btn-panel{
+    .btn__login{
+        background-color: $green;
+        margin-left: 21px;
+    }
+    .btn__register,
+    .btn__logout{
+        background-color: $red;
+    }
+    .btn__login--off{
+        display: none;
+        &.btn__login--on{
+            display: block;
+        }
+    }
+}
+.header__box.header__box-panel{
+    .btn__login--off{
+        display: none;
     }
 }
 
@@ -1209,3 +1268,5 @@
     }
 }
 
+
+@import 'media';

@@ -45,6 +45,16 @@ $(function () {
 
 
 
+    $('.header__menu-btn').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
+
+    $('.header__user-btn').on('click', function () {
+        $('.header__box-panel').toggleClass('active');
+    });
+
+
+
     var mixer = mixitup('.products__inner');
 
 

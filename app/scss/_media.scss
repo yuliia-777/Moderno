@@ -1,0 +1,221 @@
+@media (max-width: 1050px){
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__item-about{
+        min-width: 100%;
+        margin-bottom: 50px;
+    }
+    .header__box{
+        .box__text{
+            display: none;
+        }
+    }
+}
+@media (max-width: 880px){
+    .header__menu{
+        .menu__list{
+            display: none;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: $bg;
+            margin-top: 15px;
+            z-index: 1;
+            li{
+                display: block;
+                margin: 0;
+                margin-bottom: 6px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid #707070;
+            }
+        }
+    }
+}
+@media (max-width: 850px){
+    .footer__inner{
+        justify-content: flex-start;
+    }
+    .footer__item-signup{
+        min-width: 100%;
+        margin-top: 50px;
+    }
+    .footer__item-info{
+        margin: 0 30px;
+    }
+}
+@media (max-width: 690px){
+    .circle__menu{
+        right: -50px;
+    }
+}
+@media (max-width: 650px){
+    .header__box{
+        margin: 0;
+    }
+    .circle-item{
+        &.active{
+            display: none;
+            .circle__menu{
+                display: none;
+            }
+        }
+    }
+    .circle-item.basket{
+        &.active{
+            display: inline-block;
+        }
+    } 
+}
+@media (max-width: 560px){
+    .circle__menu{
+        right: -76px;
+    }
+}
+@media (max-width: 530px){
+    .footer__inner{
+        padding: 70px 0;
+    }
+    .footer__item-info{
+        min-width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .footer__item-about{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 520px){
+    .user__info{
+        display: none;
+    }
+    .user{
+        margin-top: 6px;
+        margin-left: 20px;
+        &::before{
+            right: 15px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .user{
+        margin-right: 10px;
+        padding-right: 1px;
+        &::before{
+            right: 0;
+        }
+    }
+    .circle__menu{
+        right: -76px;
+    }
+}
+@media (max-width: 430px){
+   .header__menu-btn{
+       top: 10px;
+       div{
+        background-color: $bg;
+       }
+    }
+    .header__logo{
+        margin-left: 50px;
+    }
+    .circle__menu{
+        right: -175px;
+    }
+    .footer__inner{
+       padding-top: 10px;
+    }
+    .header__user-btn{
+       display: block;
+    }
+    .header__box-panel{
+        position: absolute;
+        background-color: #fff;
+        top: -20px;
+        right: 0;
+        height: 109px;
+        width: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all .5s;
+        &.active{
+            width: auto;
+            overflow: visible;
+            padding: 0px 100px 0 30px;
+            transition: all .5s;
+            .header__logo{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 365px){
+    .header__user-btn{
+        width: 70px;
+        height: 70px;
+    }
+    .user__menu{
+        top: 59px;
+        left: auto;
+        right: -88px;
+    }
+    .circle__menu{
+        top: 45px;
+        right: auto;
+        left: -18px;
+        .circle__menu-info{
+            margin-left: 15px;
+        }
+    }
+    .header__top-inner{
+        height: 70px;
+    }
+    .header__menu-btn{
+        top: 65px;
+        div{
+            background-color: #fff;
+        }
+    }
+    .header__box-panel{
+        height: 70px;
+        top: -29px;
+    }
+   .header__box-panel.active{
+        padding-left: 0;
+        height: 98px;
+        .header__logo{
+            img{
+                display: none;
+            }
+        }
+    }
+    .header__panel{
+        div{
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 651px){
+    .circle-item{
+        &.active{
+            display: block;
+        }
+    }
+}
+@media (min-width: 881px){
+    .header__menu-btn{
+        display: none;
+    }
+    .header__menu{
+        display: flex !important;
+    }
+    .menu__list{
+        display: inline-block !important;
+    }
+}

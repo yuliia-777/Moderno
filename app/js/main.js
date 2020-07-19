@@ -45,6 +45,17 @@ $(function () {
 
 
 
+    $('.product-details__tags .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.product-details__tags').find('.tab-item').removeClass('active-tab').hide();
+        $('.product-details__tags .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+
+
     $('.header__menu-btn').on('click', function () {
         $('.menu__list').slideToggle();
     });

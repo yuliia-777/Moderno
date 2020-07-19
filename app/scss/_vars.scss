@@ -4,7 +4,12 @@ $green: #8bc34a;
 $text: #546e7a;
 $yellow: #fcb322;
 $orange: #ef6c00;
+$grey: #707070;
 
+@mixin f300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 @mixin f500 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;

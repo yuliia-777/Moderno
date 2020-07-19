@@ -382,12 +382,114 @@
 }
 
 
+// LOGIN POPUP
+
+#modal{
+    max-width: 730px;
+    width: 100%;
+    background-color: $green;
+}
+.login__inner{
+    padding-top: 46px;
+    padding-bottom: 66px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+.login__title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+    @include f700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.login__form{
+    width: 100%;
+    label{
+        position: relative;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: #fff;
+            left: 20px;
+            top: -4px;
+        }
+        input{
+            font-size: 14px;
+            color: #fff;
+            height: 43px;
+            width: 100%;
+            background-color: #76ae36;
+            border: none;
+            outline: none;
+            margin-bottom: 8px;
+            padding-left: 41px;
+            padding-right: 18px;
+            &::placeholder{
+                color: #fff;
+            }  
+        }
+    }
+    button{
+        height: 50px;
+        border: none;
+        outline: none;
+    }
+    a{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+.login__submit{
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    @include f700;
+    text-transform: uppercase;
+    width: 138px;
+    padding: 17px 0 18px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+}
+.creat-account{
+    width: 247px;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 18px;
+    padding: 13px 20px 21px 40px;
+    text-align: center;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "\f044";
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: #fff;
+        left: 30px;
+        top: 13px;
+    }
+}
+.login__form-name{
+    &::before{
+        content: "\f007";
+    }
+}
+.login__form-pass{
+    &::before{
+        content: "\f023";  
+    }
+}
+.fancybox-button svg path{
+    fill: #fff;
+}
+
+
 // SEARCH SECTION
 
 .search{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include bgi;
     min-height: 532px;
 }
 .search__content{
@@ -1464,12 +1566,6 @@
 .product-details__aside{
     width: 270px;
 }
-.aside-item{
-    padding: 0 31px 28px;
-    .aside-title{
-        margin: 0;
-    }
-}
 .product-details__aside-box{
     display: flex;
     justify-content: space-between;
@@ -1580,28 +1676,35 @@
         background-image: url(../images/awards/awards-grey.png);  
     }
 }
-.aside-item{
-    p{
-        padding-top: 24px;
-        margin-bottom: -5px;
-        font-size: 16px;
-        color: $grey;
-        @include f300;
-        span{
-            font-size: 20px;
-            color: $bg;
-            @include f700;
-            padding-right: 14px;
+.product-details__aside{
+    .aside-item{
+        padding: 0 31px 28px;
+        .aside-title{
+            margin: 0;
         }
-        &::before{
-            font-family: 'icomoon';
-            content: "\f07a";
-            color: #a6b5bb;
-            font-size: 20px;
-            padding-right: 18px;
+        p{
+            padding-top: 24px;
+            margin-bottom: -5px;
+            font-size: 16px;
+            color: $grey;
+            @include f300;
+            span{
+                font-size: 20px;
+                color: $bg;
+                @include f700;
+                padding-right: 14px;
+            }
+            &::before{
+                font-family: 'icomoon';
+                content: "\f07a";
+                color: #a6b5bb;
+                font-size: 20px;
+                padding-right: 18px;
+            }
         }
-    }
+    } 
 }
+
 .product-information{
     padding-top: 20px;
     li{

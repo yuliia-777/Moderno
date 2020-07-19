@@ -205,7 +205,7 @@
                         </div>
                         <div class="header__btn-panel">
                             <div class="header__btn btn__login">
-                                <a href="#">Login</a>
+                                <a data-fancybox data-src="#modal" href="javascript:;" href="#">Login</a>
                             </div>
                             <div class="header__btn btn__logout btn__login--off">
                                 <a href="#">Logout</a>
@@ -1230,6 +1230,29 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- LOGIN POPUP -->
+
+
+    <div style="display: none;" id="modal">
+        <div class="login__inner">
+            <div class="login__title">
+                Login
+            </div>
+            <form class="login__form">
+                <label class="login__form-name">
+                    <input type="text" placeholder="Name">
+                </label>
+                <label class="login__form-pass">
+                    <input type="text" placeholder="Password">
+                </label>
+                <button class="login__submit" type="submit">Submit</button>
+                <button class="creat-account">Creat An Account?</button>
+                <a href="#">Lost Password?</a>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

@@ -1725,11 +1725,13 @@
 
 // PAGE-404 SECTION
 
-.page-404__wrapper{
+.page-404__wrapper,
+.about-us__wrapper{
     width: 100%;
     background-color: #fff;
 }
-.page-404__head{
+.page-404__head,
+.about-us__head{
     color: #444;
     @include f500;
     font-size: 24px;
@@ -1787,6 +1789,31 @@
     font-weight: 700;
     width: 210px;
     margin-top: 30px;
+}
+
+
+// ABOUT US SECTION
+
+.about-us{
+    padding-bottom: 145px;
+}
+.about-us__inner{
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-top: none;
+    padding: 40px 50px 0;
+}
+.about-us__box{
+    padding-bottom: 50px;
+}
+.about-us__title{
+    font-size: 20px;
+    color: #444;
+    @include f700;
+    margin-bottom: 15px;
+}
+.about-us__text{
+    color: $grey;
 }
   
 

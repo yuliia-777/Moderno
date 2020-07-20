@@ -45,10 +45,10 @@ $(function () {
 
 
 
-    $('.product-details__tags .tab').on('click', function (event) {
+    $('.product-details__tags .tab, .settings__tags .tab').on('click', function (event) {
         var id = $(this).attr('data-id');
-        $('.product-details__tags').find('.tab-item').removeClass('active-tab').hide();
-        $('.product-details__tags .tabs').find('.tab').removeClass('active');
+        $('.product-details__tags, .settings__tags').find('.tab-item').removeClass('active-tab').hide();
+        $('.product-details__tags .tabs, .settings__tags .tabs').find('.tab').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
         return false;

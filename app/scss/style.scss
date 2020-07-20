@@ -1480,6 +1480,7 @@
             line-height: 60px;
             width: 25%;
             text-align: center;
+            cursor: pointer;
             & + .tab{
                 border-left: 1px solid #dfdfdf;
                 border-bottom: 1px solid #dfdfdf;
@@ -1915,6 +1916,110 @@
     }
 }
 
+
+// SETTINGS SECTION
+
+.settings{
+    padding-bottom: 150px;
+}
+.product-details__tags.settings__tags{
+    display: flex;
+    background-color: transparent;
+    .tabs{
+        max-width: 275px;
+        width: 100%;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        display: block;
+        margin-right: 30px;
+        background-color: #fff;
+        height: 100%;
+        .tab{
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding-left: 51px;
+            padding-right: 20px;
+            color: $grey;
+            font-size: 14px;
+            line-height: 50px;
+            @include f500;
+            &.active{
+                border-bottom: 2px solid $green;
+            }
+            & + .tab{
+                border-left: none;
+            }
+            &.angle-right{
+                &::before{
+                   left: 24px;
+                   color: $grey;
+                }
+            }
+            &.angle-right.active{
+                &::before{
+                   color: $green;
+                }
+            }
+        }
+    }
+    .tab_content{
+        width: 100%;;
+        border: 1px solid #dedede;
+        background-color: #fff;
+        .tab-item{
+            padding: 0;
+            columns: auto;
+            .settings__form{
+                padding: 33px 38px 60px;
+            }
+        }
+    }
+}
+.settings__box{
+    min-height: 100%;
+    width: 100%;
+}
+.settings__head{
+    color: $bg;
+    font-size: 24px;
+    @include f500;
+    padding : 20px 38px;
+    border-bottom: 1px solid #dedede;
+}
+.settings__form-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+    label{
+        color: #444;
+    }
+    input,
+    select{
+        height: 40px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        width: 540px;
+        outline: none;
+        color: $grey;
+        font-size: 14px;
+        padding: 15px;
+    }
+    select{
+        padding: 0 15px;
+    }
+}
+.settings__btn{
+    background-color: $green;
+    color: #fff;
+    font-size: 15px;
+    @include f500;
+    width: 108px;
+    border: none;
+    line-height: 46px;
+    margin-left: 248px;
+}
 
   
 

@@ -288,7 +288,8 @@
     height: 0;
     overflow: hidden;
     transition: all .3s;
-    a{
+    a,
+    span{
         font-size: 12px;
         color: #546e7a;
         margin-bottom: 12px;
@@ -299,8 +300,8 @@
     margin-left: 7px;
     min-width: 72px;
     height: 32px;
-    text-align: center;
     border-radius: 4px;
+    text-align: center;
         a{
             color: #fff;
             font-size: 12px;
@@ -321,7 +322,8 @@
         & + li{
             margin-left: 38px;
             }
-        a{
+        a,
+        span{
             color: #fff;
             font-size: 14px;
             line-height: 30px;
@@ -434,7 +436,6 @@
     button{
         height: 50px;
         border: none;
-        outline: none;
     }
     a{
         margin-top: 20px;
@@ -453,13 +454,12 @@
     margin-right: 10px;
     box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
 }
-.creat-account{
+.create-account{
     width: 247px;
     background-color: #76ae36;
     color: #fff;
     font-size: 18px;
     padding: 13px 20px 21px 40px;
-    text-align: center;
     position: relative;
     &::before{
         position: absolute;
@@ -538,7 +538,6 @@
         right: 20px;
         border: none;
         background-color: transparent;
-        outline: none;
     }
 }
 
@@ -555,7 +554,6 @@
         @include f500;
         font-size: 14px;
         background-color: #fff;
-        outline: none;
         border: none;
         padding: 13px 21px;
         color: $bg;
@@ -641,14 +639,12 @@
     font-size: 12px;
 }
 .products__bottom-btn{
-    text-align: center;
     button{
         margin: 48px 6px 112px;
         color: $bg;
         font-size: 16px;
         padding: 21px 32px 19px;
         border: none;
-        outline: none;
         background-color: #fff;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
     }
@@ -688,7 +684,6 @@
             font-size: 0;
             background-color: #e8e8e8;
             border: none;
-            outline: none;
             border-radius: 50%;
             margin: 0px 3px;
         }
@@ -890,7 +885,8 @@
 }
 .footer__item-list{
     li{
-        a{
+        a,
+        span{
             padding-left: 22px;
         }
     }
@@ -1163,7 +1159,6 @@
         margin: 33px;
         background-color: $green;
         color: #fff;
-        text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
         width: 205px;
@@ -1583,7 +1578,6 @@
         width: 100%;
         border: none;
         color: #fff;
-        text-align: center;
         @include f700;
         font-size: 16px;
         line-height: 50px;
@@ -1726,12 +1720,14 @@
 // PAGE-404 SECTION
 
 .page-404__wrapper,
-.about-us__wrapper{
+.about-us__wrapper,
+.contact-us__wrapper{
     width: 100%;
     background-color: #fff;
 }
 .page-404__head,
-.about-us__head{
+.about-us__head,
+.contact-us__head{
     color: #444;
     @include f500;
     font-size: 24px;
@@ -1797,7 +1793,8 @@
 .about-us{
     padding-bottom: 145px;
 }
-.about-us__inner{
+.about-us__inner,
+.contact-us__inner{
     background-color: #fff;
     border: 1px solid #dedede;
     border-top: none;
@@ -1815,6 +1812,110 @@
 .about-us__text{
     color: $grey;
 }
+
+
+// CONTACT US SECTION
+
+.contact-us{
+    padding-bottom: 137px;
+}
+.contact-us__inner{
+    padding: 33px 40px 15px;
+}
+.contact-us__map{
+    margin-bottom: 55px;
+    iframe{
+        max-width: 1090px;
+        height: 415px;
+        width: 100%;
+    }
+}
+.contact-us__inner-box{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us__info{
+    width: 320px;
+    padding-bottom: 40px;
+}
+.contact-us__box{
+    width: 280px;
+    &-title{
+        color: $bg;
+        font-size: 20px;
+        @include f500;
+        padding-left: 40px;
+        padding-bottom: 18px;
+        margin-bottom: 25px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: $green;
+            width: 44px;
+            height: 4px;
+            left: 40px;
+            bottom: 0;
+        }
+    }
+    &-text{
+        padding-left: 40px;
+        color: $grey;
+        margin-bottom: 30px;
+        width: 280px;
+    }
+}
+.contact-us__form{
+    max-width: 730px;
+    width: 100%;
+    &-title{
+        font-size: 24px;
+        @include f500;
+        color: #333;
+        margin-bottom: 28px;
+    }
+    &-input{
+        display: flex;
+        justify-content: space-between;
+    }
+    form{
+        input,
+        textarea{
+            background-color: #f1f4f5;
+            padding: 15px 17px;
+            border: none;
+            outline: none;
+            width: 100%;
+            color: $text;
+            &::placeholder{
+                font-size: 15px;
+                color: #7a7a7a;
+            }
+        }
+        input{
+            max-width: 351px;
+        }
+        textarea{
+            display: block;
+            margin-top: 28px;
+            min-height: 193px;
+            resize: none;
+        }
+    }
+    &-btn{
+        background-color: $green;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        @include f700;
+        padding: 20px;
+        width: 190px;
+        margin-top: 22px;
+        border: none;
+    }
+}
+
+
   
 
 

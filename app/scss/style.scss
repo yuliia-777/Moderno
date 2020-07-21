@@ -1920,7 +1920,7 @@
 // SETTINGS SECTION
 
 .settings{
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 .product-details__tags.settings__tags{
     display: flex;
@@ -1970,6 +1970,9 @@
         .tab-item{
             padding: 0;
             columns: auto;
+            &:nth-last-of-type(-n+4){
+                display: none;
+            }
             .settings__form{
                 padding: 33px 38px 60px;
             }
@@ -2021,7 +2024,194 @@
     margin-left: 248px;
 }
 
-  
+
+// PROFILE DETAILS SECTION
+
+.profile-details{
+    padding-bottom: 114px;
+}
+.profile-details__inner{
+    display: flex;
+}
+.profile-details__aside{
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    .product-details__aside-author{
+        padding-left: 27px;
+    }
+    .aside-author__awards{
+        padding-left: 33px;
+        margin-top: 30px;
+        margin-bottom: 28px;
+    }
+    .footer__item-social{
+        margin: 24px 0 23px;
+        li + li a{
+            margin-left: 4px;
+        }
+    }
+}
+.profile-details__content{
+    width: 100%;
+}
+.aside-author__box-status{
+    font-size: 13px;
+    line-height: 28px;
+    color: #707070;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    min-width: 78px;
+    margin-top: 11px;
+    padding-left: 17px;
+    position: relative;
+    &::before{
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: $green;
+        border-radius: 50%;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+    }
+}
+.profile-details__aside-btn{
+    display: block;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 5px 18px;
+    margin-bottom: 15px;
+}
+.sendmessage-btn{
+    background-color: #546e7a;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    &::before{
+        padding-right: 12px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'icomoon';
+    }
+}
+.following-btn{
+    background-color: $green;
+}
+.profile-details__content-banner{
+    max-width: 100%;
+    min-height: 368px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.profile-details__content-image{
+    @include bgi;
+    margin: 17px 20px;
+    max-width: 829px;
+    height: 332px;
+}
+.profile-details__content-info{
+    display: flex;
+    min-height: 80px;
+    border: 1px solid #dcdcdc;
+}
+.profile-details__content-item{
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    & + .profile-details__content-item{
+        border-left: 1px solid #dcdcdc;
+    }
+    .author-stars{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0 15px 0 8px;
+    }
+}
+.profile-details__content-title{
+    color: $bg;
+    @include f500;
+    margin-top: 18px;
+}
+.profile-details__content-text{
+    color: $grey;
+    margin-bottom: 15px;
+}
+.content-text__price{
+    color: #000;
+}
+.profile-details__bottom{
+   .product-details__tags.settings__tags{
+        margin-top: 15px;
+        .tabs{
+            max-width: 270px;
+            width: 100%;
+            .tab.active{
+                color: $bg;
+                &::before{
+                    color: $green;
+                }
+            }
+            .tab{
+                position: relative;
+                font-family: 'Roboto', sans-serif !important;
+                &::before{
+                left: 24px;
+                position: absolute;
+                font-family: 'icomoon';
+                }
+            }
+        }
+    }
+    .settings__box{
+        padding: 33px 45px 32px;
+        .bottom-box__title{
+            font-size: 20px;
+            @include f700;
+            color: $bg;
+            margin-bottom: 15px;
+        }
+        .profile-details__bottom-box{
+            margin-bottom: 40px;
+        }
+    }
+}
+.bottom-box__line{
+    padding-bottom: 20px;
+}
+.bottom-box__line-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: $bg;
+    padding-bottom: 5px;
+}
+.line-info__title{
+    @include f500;
+    font-style: italic;
+}
+.line-info__percent{
+    @include f700;
+}
+.bottom-box__line-scale{
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 15px;
+    border-radius: 4px;
+    position: relative;
+    span{
+        background-image: url(../images/line.jpg);
+        background-repeat: repeat;
+        position: absolute;
+        height: 15px;
+        border-radius: 4px;
+    }
+}
+
 
 
 @import 'media';

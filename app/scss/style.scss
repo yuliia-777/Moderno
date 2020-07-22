@@ -1900,7 +1900,6 @@
             display: block;
             margin-top: 28px;
             min-height: 193px;
-            resize: none;
         }
     }
     &-btn{
@@ -2211,6 +2210,191 @@
         border-radius: 4px;
     }
 }
+
+
+// UPLOAD PRODUCT SECTION
+
+.upload{
+    padding-bottom: 108px;
+}
+.upload__inner{
+    background-color: #fff;
+    border: 1px solid #dedede;
+    button{
+        width: 124px;
+        background-color: $green;
+        color: #fff;
+        font-size: 15px;
+        line-height: 46px;
+        padding: 0px 10px;
+        @include f500;
+        border: none;
+        margin-left: 263px;
+        margin-bottom: 67px;
+    }
+}
+.upload__title{
+    font-size: 24px;
+    @include f500;
+    color: $bg;
+    padding: 22px 33px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.upload__content{
+    padding: 43px;
+    padding-right: 48px;
+}
+.upload__content-line{
+    display: flex;
+    label{
+        max-width: 220px;
+        width: 100%;
+        font-size: 15px;
+        color: #444;
+        padding-top: 8px;
+        span{
+            color: $green;
+        }
+    }
+    input,
+    select,
+    textarea{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #dedede;
+        margin-bottom: 24px;
+        outline: none;
+        padding: 0 17px;
+        color: $bg;
+        background-color: #f9f9f9;
+        &::placeholder{
+            color: $grey;
+            font-size: 15px;
+        }
+    }
+    textarea{
+        padding: 13px 17px;
+        min-height: 150px;
+    }
+}
+.jq-selectbox{
+    width: 100%;
+    margin-bottom: 24px;
+}
+.jqselect{
+    &:focus{
+        outline: none;
+    }
+}
+.jq-selectbox__select{
+    width: 100%;
+    height: 40px;
+    padding: 4px 17px;
+    border: 1px solid #dedede;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    color: #333;
+    text-shadow: none;
+    &:hover{
+        background: #f9f9f9;
+    }
+    &:focus{
+        outline: none;
+    }
+    &::after{
+        content: '\f0d7';
+        position: absolute;
+        right: 15px;
+        top: 4px;
+        font-family: 'icomoon';
+        font-size: 15px;
+        color: #444;
+    }
+}
+.jq-selectbox__select-text{
+    width: 100%;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    padding-right: 50px;
+    color: $grey;
+}
+.jq-selectbox__trigger{
+    display: none;
+}
+.jq-file{
+    margin-bottom: 24px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    &:hover{
+        .jq-file__browse{
+           background: #fff; 
+        }
+    }
+    &:visited,
+    &:focus,
+    &:active{
+        outline: none;
+    }
+    &:visited{
+        border: none;
+    }
+    &__name{
+        background-color: #f9f9f9;
+        height: 40px;
+        padding: 7px 103px;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        border-radius: 0;
+        background: #f9f9f9;
+        box-shadow: none;
+        color: $grey;
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        cursor: pointer;
+        &:visited,
+        &:focus,
+        &:active{
+            outline: none;
+        }
+        &:visited{
+            border: none;
+        }
+    }
+    .jq-file__browse{
+        top: 7px;
+        right: auto;
+        left: 8px;
+        padding: 0 10px;
+        border: 1px solid #dedede;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        color: #444;
+        font-size: 12px;
+        line-height: 24px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.jq-selectbox__dropdown {
+    margin: 2px 0 0;
+    padding: 0;
+    border: 1px solid #dedede;
+    border-radius: 0;
+    background: #FFF;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    color: $bg;
+}
+
 
 
 

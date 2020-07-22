@@ -66,6 +66,12 @@ $(function () {
 
 
 
+    $(function () {
+        $('input, select').styler();
+    });
+
+
+
     var mixer = mixitup('.products__inner');
 
 

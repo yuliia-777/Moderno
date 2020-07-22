@@ -1162,6 +1162,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         width: 205px;
+        text-align: center;
     }  
 }
 
@@ -1565,13 +1566,48 @@
 .product-details__aside-box{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 28px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 23px;
 }
 .aside-box__price{
     color: $red;
     @include f500;
     font-size: 22px;
+}
+.aside-box__select{
+    .jq-selectbox{
+        width: 90px;
+        margin-bottom: 0;
+    }
+    .jq-selectbox__select{
+        padding: 0 17px 0 11px;
+        height: 32px;
+        &::after{
+            color: $green;
+            font-size: 13px;
+            right: 9px;
+            top: 0;
+        }
+    }
+    .jq-selectbox__select-text{
+        font-size: 13px;
+        color: #70838d;
+        padding: 0;
+    }
+    .jq-selectbox__dropdown{
+        font-size: 13px;
+        color: #70838d;
+        padding: 0;
+        height: 32px;
+        top: 31px;
+        ul{
+            li{
+                padding: 0px 10px;
+                line-height: 32px;
+            }
+        }
+    }
 }
 .aside-box__btn{
     button{
@@ -1673,12 +1709,12 @@
 }
 .product-details__aside{
     .aside-item{
-        padding: 0 31px 28px;
+        padding: 0 28px 23px;
         .aside-title{
             margin: 0;
         }
         p{
-            padding-top: 24px;
+            padding-top: 17px;
             margin-bottom: -5px;
             font-size: 16px;
             color: $grey;
@@ -1994,6 +2030,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 21px;
+    .jq-selectbox {
+        width: 540px;
+        margin-bottom: 0;
+    }
     label{
         color: #444;
     }
@@ -2392,7 +2432,15 @@
     box-shadow: none;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 15px;
+    line-height: 24px;
     color: $bg;
+    &:focus{
+        outline: none;
+    }
+}
+.jq-selectbox li:hover{
+    background-color: $grey;
+    color: #FFF;
 }
 
 

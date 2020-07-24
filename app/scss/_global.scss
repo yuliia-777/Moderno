@@ -83,6 +83,9 @@ body{
     padding-bottom: 40px;
     li{
         display: inline-block;
+        &:last-child{
+            color: $bg;
+        }
         & + li{
             padding-left: 20px;
             position: relative;
@@ -95,9 +98,6 @@ body{
         }
         a{
             color: #b0bec5;
-        }
-        span{
-            color: $bg;
         }
     }
 }

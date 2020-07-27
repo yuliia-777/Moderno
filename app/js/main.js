@@ -15,7 +15,32 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1850,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 

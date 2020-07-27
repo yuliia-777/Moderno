@@ -566,8 +566,8 @@
 
 .products__inner{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: -30px;
 }
 .products__item{
     max-width: 442px;
@@ -575,6 +575,7 @@
     background-color: #fff;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 32px;
+    margin-left: 30px;
     transition: all .5s;
     &:hover{
         box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
@@ -639,6 +640,7 @@
     font-size: 12px;
 }
 .products__bottom-btn{
+    text-align: center;
     button{
         margin: 48px 6px 112px;
         color: $bg;
@@ -1220,10 +1222,11 @@
 }
 .new-items__page{
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
     flex-wrap: wrap;
     .products__item{
         max-width: 270px;
+        margin-left: 30px;
         .item-image{
             min-height: 180px;
         }
@@ -1262,9 +1265,7 @@
     }
 }
 .pagination{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 37px;
     a,
     span{
         display: inline-block;
@@ -2534,7 +2535,6 @@
 .withdrawals__line-paid{
     color: $green;
 }
-
 
 
 @import 'media';

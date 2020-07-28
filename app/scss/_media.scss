@@ -555,9 +555,6 @@
         padding-top: 120px;
         padding-bottom: 80px;
     }
-    .search{
-        min-height: 500px;
-    }
     .search__text{
         margin-top: 20px;
     }
@@ -611,7 +608,7 @@
     .profile-details__aside .footer__item-social {
         width: 100%;
     }
-    .aside-item {
+    .profile-details .aside-item {
         max-width: 100%;
         margin-bottom: 0;
     }
@@ -623,6 +620,9 @@
     }
     .categories.aside-item{
         margin-bottom: 30px;
+    }
+    .new-items__sort{
+        margin-bottom: 20px;
     }
 }
 
@@ -724,6 +724,10 @@
         margin: 15px 0;
         padding-top: 15px;
         padding-bottom: 13px;
+    }
+    .create-account{
+        display: block;
+        margin-top: 8px;
     }
 }
 
@@ -869,6 +873,19 @@
     }
     .authors__box {
         max-width: 285px;
+    }
+    .create-account{
+        width: 100%;
+        font-size: 16px;
+        padding-top: 15px;
+        &::before{
+            font-size: 15px;
+            left: 23px;
+            top: 17px;
+        }
+    }
+    .login__inner{
+        padding-bottom: 33px;
     }
 }
 

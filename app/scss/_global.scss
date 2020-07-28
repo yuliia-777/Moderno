@@ -1,6 +1,8 @@
 html{
     box-sizing: border-box;
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 *{
 	margin: 0;
@@ -38,6 +40,8 @@ body{
     font-size: 15px;
     line-height: 24px;
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .container{
@@ -81,6 +85,8 @@ body{
 .breadcrumbs__items{
     padding-top: 46px;
     padding-bottom: 40px;
+    width: 1920px;
+    overflow-x: hidden;
     li{
         display: inline-block;
         &:last-child{
